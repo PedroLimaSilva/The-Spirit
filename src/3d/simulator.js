@@ -150,11 +150,11 @@ function _createPositionTexture() {
 function update(dt) {
 
     if(settings.speed || settings.dieSpeed) {
-        var r = 200;
-        var h = 60;
+        var r = 50;
+        var h = 10;
         if(settings.isMobile) {
-            r = 100;
-            h = 40;
+            r = 30;
+            h = 5;
         }
 
         var autoClearColor = _renderer.autoClearColor;

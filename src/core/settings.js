@@ -25,7 +25,7 @@ var amountInfo = amountMap[query.amount];
 exports.simulatorTextureWidth = amountInfo[0];
 exports.simulatorTextureHeight = amountInfo[1];
 
-exports.useTriangleParticles = false;
+exports.useTriangleParticles = true;
 exports.followMouse = false;
 
 exports.speed = 1;
