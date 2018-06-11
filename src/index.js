@@ -42,9 +42,9 @@ var _ray = new THREE.Ray();
 var _initAnimation = 0;
 
 var _bgColor;
-var _logo;
-var _instruction;
-var _footerItems;
+//var _logo;
+//var _instruction;
+//var _footerItems;
 
 function init() {
 
@@ -175,10 +175,10 @@ function init() {
         elem.style.color = '#000';
     });
 
-    _logo = document.querySelector('.logo');
-    _instruction = document.querySelector('.instruction');
-    document.querySelector('.footer').style.display = 'block';
-    _footerItems = document.querySelectorAll('.footer span');
+    //_logo = document.querySelector('.logo');
+    //_instruction = document.querySelector('.instruction');
+    //document.querySelector('.footer').style.display = 'block';
+    //_footerItems = document.querySelectorAll('.footer span');
 
     window.addEventListener('resize', _onResize);
     window.addEventListener('mousemove', _onMove);
@@ -257,6 +257,7 @@ function _render(dt, newTime) {
     simulator.update(dt);
     particles.update(dt);
 
+    /*
     ratio = Math.min((1 - Math.abs(_initAnimation - 0.5) * 2) * 1.2, 1);
     var blur = (1 - ratio) * 10;
     _logo.style.display = ratio ? 'block' : 'none';
@@ -278,6 +279,7 @@ function _render(dt, newTime) {
         _instruction.style.display = ratio ? 'block' : 'none';
         _instruction.style.transform = 'translate3d(0,' + ((1 - ratio * ratio) * 50) + 'px,0)';
     }
+    */
 
     fxaa.enabled = !!settings.fxaa;
     motionBlur.enabled = !!settings.motionBlur;

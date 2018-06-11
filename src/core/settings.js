@@ -25,15 +25,15 @@ var amountInfo = amountMap[query.amount];
 exports.simulatorTextureWidth = amountInfo[0];
 exports.simulatorTextureHeight = amountInfo[1];
 
-exports.useTriangleParticles = true;
-exports.followMouse = true;
+exports.useTriangleParticles = false;
+exports.followMouse = false;
 
 exports.speed = 1;
 exports.dieSpeed = 0.015;
 exports.radius = amountInfo[2];
 exports.curlSize = 0.02;
 exports.attraction = 1;
-exports.shadowDarkness = 0.45;
+exports.shadowDarkness = 0.5;
 
 exports.bgColor = '#343434';
 exports.color1 = '#ffffff';
@@ -48,6 +48,6 @@ var motionBlurQualityMap = exports.motionBlurQualityMap = {
 };
 exports.motionBlurQualityList = keys(motionBlurQualityMap);
 query.motionBlurQuality = motionBlurQualityMap[query.motionBlurQuality] ? query.motionBlurQuality : 'medium';
-exports.motionBlur = true;
+exports.motionBlur = false;
 exports.motionBlurPause = false;
-exports.bloom = true;
+exports.bloom = false;
